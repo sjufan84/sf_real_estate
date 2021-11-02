@@ -62,8 +62,8 @@ housing_units_by_year['housing_units'].hvplot.bar(
     yformatter = '%.0f', 
     ylim = [365000, 385000],
     xlabel = 'Year',
-    ylabel = 'Housing Units')```  
-    
+    ylabel = 'Housing Units')
+```  
 ![Housing units per year plot](./Images/zoomed-housing-units-by-year.png)  
 
 
