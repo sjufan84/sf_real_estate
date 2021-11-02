@@ -64,7 +64,7 @@ housing_units_by_year['housing_units'].hvplot.bar(
     xlabel = 'Year',
     ylabel = 'Housing Units')```  
     
-![Housing units per year plot]('./Images/zoomed-housing-units-by-year.png')  
+![Housing units per year plot](./Images/zoomed-housing-units-by-year.png)  
 
 
 ## The second part of the project is geared towards assessing the trends of average sales price per sq.ft. in San Francisco vs. the gross rent from the years of 2010 to 2016.
@@ -80,7 +80,7 @@ xlabel = 'Year',
     legend=True, 
     title = 'Gross rent vs. sales prices per sq.ft. of SF real estate, 2010 to 2016')
 ```
-![SF gross rental income vs. price per sq.ft., 2010 to 2016]('../Images/avg-sale-px-sq-foot-gross-rent.png')  
+![SF gross rental income vs. price per sq.ft., 2010 to 2016](./Images/avg-sale-px-sq-foot-gross-rent.png)  
   
 
 ##  Now we drill down to analyze changes in gross rental vs. price per sq.ft. by the neighborhood using an interactive hvplot to allow for neighborhood selection within our chart --  
@@ -97,7 +97,7 @@ prices_by_year_by_neighborhood.hvplot(
     ylabel = 'Gross Rent/Sales price per sq.ft',
     title = 'Gross Rent and Sales Prices per sq.ft. in SF 2010-2016, by neighborhood') 
 ```
-![Housing and rental trends for SF by neighborhood]('./Images/pricing-info-by-neighborhood.png')  
+![Housing and rental trends for SF by neighborhood](./Images/pricing-info-by-neighborhood.png)  
   
 
 ## Finally we create a geospatial plot that allows us to visualize the market data based on a geographic overlay of San Francisco, modeling both rental income and price per sq.ft. with visualizations that allow for a quick analysis of the specific neighborhoods within the city, as well as the ability to zoom in on certain neighborhoods to further drill down on their details.  
@@ -129,9 +129,10 @@ all_neighborhoods_plot = all_neighborhoods_df.hvplot.points(
     title = 'San Francisco gross rent and sale prices per sq.ft. by neighborhood (marked by circle size)',
     clabel = 'Gross Rent',
     hover_cols = ['Neighborhood', 'sale_price_sqr_foot', 'gross_rent']
-    )  
-![Geographic chart our real estate dataframe by neighborhood]('./Images/6-4-geoviews-plot.png')  
-```  
+    ) 
+```
+![Geographic chart our real estate dataframe by neighborhood](./Images/6-4-geoviews-plot.png)  
+
 
 ### With all of the power and flexibility that the hvplot and geoviews libraries afford us, it is easy to assess our datasets about SF real estate trends to identify investment opportunities not only across the city as a whole but also drilling down to specific neighborhoods, adding robust and flexible visualizations to quickly digest the data in a useful and specific way.
 
